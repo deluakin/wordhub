@@ -9,7 +9,5 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "word-list-json": "^0.2.0"
-  }
+  "dependencies": {}
 }

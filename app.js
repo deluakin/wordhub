@@ -1,4 +1,4 @@
-const words = require("word-list-json");
+const fs = require('fs');
 
 findWords = (word) => {
     if(word.trim().length < 3)
@@ -7,7 +7,8 @@ findWords = (word) => {
     let wordLen = word.length
     let lowerCaseWord = word.toLowerCase();
     
-    let foundWords = words.filter((possibleWord) => {
+    const wordArray = fs.readFileSync("words.txt", 'utf8').split('\n');
+    let foundWords = wordArray.filter((possibleWord) => {
         if(possibleWord.length <= wordLen){
             let indexes = []
             for(var i=0; i<possibleWord.length; i++){
@@ -30,9 +31,15 @@ findWords = (word) => {
             return true;
         }
     })
+
+    return foundWords
 }
 
 findCharacterIndex = (word, character, startIndex) => word.indexOf(character, startIndex)
 
+const args = process.argv.slice(2)
+if(args.length > 0){
+    console.log(findWords(args[0]))
+}
 
 module.export = findWords
