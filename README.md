@@ -6,13 +6,13 @@ Could be used for a game like [https://wordhub.com](https://wordhub.com)
 
 ## Install
 
-```nodejs
+```javascript
 $ npm install --save wordhub
 ```
 
 ## Usage
 
-```nodejs
+```javascript
 require("wordhub")
 
 console.log(findWords("Hello"))

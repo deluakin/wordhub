@@ -2,7 +2,7 @@
   "homepage": "https://github.com/deluakin/wordhub",
   "repository": "https://github.com/deluakin/wordhub",
   "name": "wordhub",
-  "version": "1.0.0",
+  "version": "1.3.0",
   "description": "A simple nodejs module that can be used to find all the possible words from a word",
   "main": "app.js",
   "scripts": {
