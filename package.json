@@ -1,13 +1,22 @@
 {
+  "homepage": "https://github.com/deluakin/wordhub",
+  "repository": "https://github.com/deluakin/wordhub",
   "name": "wordhub",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A simple nodejs module that can be used to find all the possible words from a word",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "word",
+    "words",
+    "sub-word",
+    "wordhub",
+    "word-puzzle",
+    "unscramble-word"
+  ],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {}
 }
