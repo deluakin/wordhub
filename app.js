@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require('path');
 
 class Wordhub {
     static findWords = (word) => {
@@ -8,7 +9,7 @@ class Wordhub {
         let wordLen = word.length
         let lowerCaseWord = word.toLowerCase();
         
-        const wordArray = fs.readFileSync("words.txt", 'utf8').split('\n');
+        const wordArray = fs.readFileSync(path.join(__dirname, "words.txt"), 'utf8').split('\n');
         let foundWords = wordArray.filter((possibleWord) => {
             if(possibleWord.length <= wordLen){
                 let indexes = []
