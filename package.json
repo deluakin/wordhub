@@ -1,6 +1,6 @@
 {
   "name": "wordhub",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "A simple nodejs module that can be used to find all the possible words from a word",
   "main": "index.js",
   "scripts": {
