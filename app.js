@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-findWords = (word) => {
+const findWords = (word) => {
     if(word.trim().length < 3)
         return;
     
@@ -36,7 +36,7 @@ findWords = (word) => {
     return foundWords
 }
 
-findCharacterIndex = (word, character, startIndex) => word.indexOf(character, startIndex)
+const findCharacterIndex = (word, character, startIndex) => word.indexOf(character, startIndex)
 
 const args = process.argv.slice(2)
 if(args.length > 0){
