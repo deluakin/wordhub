@@ -1,3 +1,3 @@
 declare module 'wordhub' {
-    export function findWords(word: any): string[];
+    export function findWords(word: string): string[];
 }
